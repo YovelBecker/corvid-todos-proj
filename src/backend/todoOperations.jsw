@@ -1,0 +1,23 @@
+import wixData from 'wix-data'
+import KEY from './credentials.js'
+import sgMail from '@sendgrid/mail'
+
+sgMail.setApiKey(KEY);
+
+export async function getActiveTodosCount() {
+	return await wixData.query('Task')
+		.eq('isDone', false)
+		.or(wixData.query('Task').eq('isDone', null))
+		.count()
+}
+
+export async function sendEmail() {
+	const activeTodosCount = await getActiveTodosCount()
+	const msg = {
+		to: 'yovelbecker@gmail.com',
+		from: 'yovelbecker@gmail.com',
+		subject: 'This was sent using CORVID',
+		text: `There Are ${activeTodosCount} Left`,
+	};
+	sgMail.send(msg);
+}

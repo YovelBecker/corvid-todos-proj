@@ -1,0 +1,9 @@
+{
+  "name": "corvid-todos-proj",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "corvid-cli": "^0.2.5",
+    "corvid-types": "^0.1.90"
+  }
+}

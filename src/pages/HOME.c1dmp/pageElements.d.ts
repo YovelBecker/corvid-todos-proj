@@ -1,0 +1,30 @@
+type PageElementsMap = {
+  "#page1": $w.Page;
+  "#columnStrip1": $w.ColumnStrip;
+  "#taskInput": $w.TextInput;
+  "#addTaskButton": $w.Button;
+  "#taskDataset": $w.dataset;
+  "#activeTasksCount": $w.Text;
+  "#filterRadioGroup": $w.RadioButtonGroup;
+  "#clearCompletedButton": $w.Button;
+  "#line1": $w.HiddenCollapsedElement;
+  "#tasksRepeater": $w.Repeater;
+  "#vectorImage2": $w.VectorImage;
+  "#randomTodosBtn": $w.Button;
+  "#column1": $w.Column;
+  "#container1": $w.Container;
+  "#text1": $w.Text;
+  "#image1": $w.Image;
+  "#text2": $w.Text;
+  "#vectorImage1": $w.VectorImage;
+  "#group1": $w.Box;
+  "#taskText": $w.Text;
+  "#completedCheckbox": $w.Checkbox;
+  "#header1": $w.Header;
+  "#footer1": $w.Footer;
+  "#line3": $w.HiddenCollapsedElement;
+  "#group2": $w.Box;
+  "#image2": $w.Image;
+  "#line2": $w.HiddenCollapsedElement;
+  "#text4": $w.Text;
+}
